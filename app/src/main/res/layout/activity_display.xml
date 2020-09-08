@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DisplayActivity">
+
+    <View
+        android:id="@+id/header_bgId"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/myRecyclerViewId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pokemonHeaderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/pokemon_heading"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/heading_size"
+        app:layout_constraintBottom_toBottomOf="@+id/header_bgId"
+        app:layout_constraintEnd_toEndOf="@+id/header_bgId"
+        app:layout_constraintStart_toStartOf="@+id/header_bgId"
+        app:layout_constraintTop_toTopOf="@+id/header_bgId" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myRecyclerViewId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_bgId" />
+</androidx.constraintlayout.widget.ConstraintLayout>
