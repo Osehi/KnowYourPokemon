@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UserInputActivity"
+    android:padding="8dp"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userInputLayoutId"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/clickGoId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/list_size"
+        app:layout_constraintTop_toBottomOf="@+id/inputHeadingId">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clickGoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/press_go"
+        android:textAllCaps="false"
+        android:textSize="@dimen/heading_size"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userInputLayoutId" />
+
+    <TextView
+        android:id="@+id/inputHeadingId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:lines="2"
+        android:text="@string/list_of_pokemon"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textSize="@dimen/heading_size"
+        app:layout_constraintBottom_toTopOf="@+id/userInputLayoutId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

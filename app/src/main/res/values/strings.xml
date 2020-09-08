@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">KnowYourPokemon</string>
+    <string name="welcome_note">KnowYourPokemon</string>
+    <string name="list_of_pokemon">How Many Pokemon Characters Do You Want</string>
+    <string name="press_go">Go</string>
+    <string name="list_size">List Size</string>
 </resources>
